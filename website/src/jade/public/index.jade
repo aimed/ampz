@@ -1,0 +1,58 @@
+extends ../layouts/default.jade
+
+
+block hero
+	.promote
+		.promote__description
+			h1.promote__title <span id="logo" alt="Ampz">Ampz</span>
+			h2.promote__subtitle.
+				An unofficial <a href="http://www.8tracks.com" class="icon icon-8tracks" alt="8tracks"></a> client
+				for Mac OS X.
+		.promote__preview
+			.promote__preview-image
+
+block content
+
+	// Features
+	section.index-section#features
+		h2.index-section__title Features
+		p.index-beta-notice.
+			Note: Ampz is currently in an early phase of development, thus not all 
+			features availiable on the 8tracks website are supported yet.
+			This also means that there are some bugs which I might or might 
+			not be aware of.
+		// Features-List
+		ul.list-group
+			li.list-group-item Listen to music
+			li.list-group-item Explore Popular Mixes
+			li.list-group-item Sign in to your 8tracks account
+			li.list-group-item Recommended Mixes and Personal Collections
+			li.list-group-item Like Mixes/Star Tracks/Follow Users
+			li.list-group-item View User/Mix details
+			li.list-group-item Search for keywords
+		// Roadmap
+		section.index-roadmap
+			h4 ToDos
+			ul.list-group
+				li.list-group-item Add/Remove Mixes to/from Collections
+				li.list-group-item Tracklist and Discussion for Mixes
+				li.list-group-item Web-/ and Buylinks
+				li.list-group-item ...
+
+	// Download
+	section.index-section#download
+		.index-download
+			.index-download-option 
+				//a#download-button.btn.btn-emphasize.btn-lg(href="https://sellfy.com/p/mOIS/",target="_blank") Buy with a beer
+				a#download-button.btn.btn-emphasize.btn-lg(href="http://ampz.io/download/Ampz.zip",onclick="ga('send',{'hitType':'pageview','page':'/download','title':'Download'});") Download
+				// System requirements
+			p.index-system-requirements
+				h4 System requirements
+				p.
+					Mac OS X 10.10
+				// Free download
+			//- p.index-buy-a-beer-hint.
+			//- 	You can also download Ampz <small>v1.0.0.j</small> for free <a href="http://ampz.io/download/Ampz.zip">here</a>. 
+			//- 	Remember: by pressing the green button you support a poor student :)
+
+

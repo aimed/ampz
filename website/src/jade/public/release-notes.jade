@@ -1,0 +1,14 @@
+extends ../layouts/default.jade
+
+block variables
+	- var title = "Release Notes"
+	- var description = "Ampz latest release notes"
+
+block content
+	section.story
+		h1= title
+		- for notes, version in data
+			h2 Version #{version}
+			ul.release-notes
+				- for note in notes
+					li.release-notes-item= note

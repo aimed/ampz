@@ -1,0 +1,21 @@
+PODS:
+  - KKGoogleAnalytics (0.0.1)
+  - Mantle (2.0):
+    - Mantle/extobjc (= 2.0)
+  - Mantle/extobjc (2.0)
+  - Sparkle (1.9.0)
+  - StreamingKit (0.1.25)
+
+DEPENDENCIES:
+  - KKGoogleAnalytics
+  - Mantle
+  - Sparkle
+  - StreamingKit
+
+SPEC CHECKSUMS:
+  KKGoogleAnalytics: c71fe86b1c51f4275d934ca81549256fbd763f08
+  Mantle: d7c75b6fb789b20f7ae30cd0d09435fe545896ff
+  Sparkle: 75bbbc5ab2d666f7f77c241afe7fd28364a8f9f7
+  StreamingKit: f00c054cfd0f59d88c8be7a2270e208302ce48c4
+
+COCOAPODS: 0.37.2

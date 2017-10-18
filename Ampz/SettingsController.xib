@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SettingsController">
+            <connections>
+                <outlet property="loginButton" destination="Fux-nj-yBm" id="PBi-Uf-cnX"/>
+                <outlet property="passwordField" destination="fJL-nn-GaC" id="Q12-fS-GO3"/>
+                <outlet property="usernameField" destination="nlq-Mg-FG2" id="9Hq-ZW-4lk"/>
+                <outlet property="view" destination="whr-l5-RYu" id="34V-Rg-QJ7"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="whr-l5-RYu">
+            <rect key="frame" x="0.0" y="1" width="450" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NLe-vy-KZ3">
+                    <rect key="frame" x="159" y="142" width="132" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="132" id="EGV-bl-0VM"/>
+                        <constraint firstAttribute="height" constant="56" id="bWm-L7-rr5"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="8tracks_logo_flatwhite" id="772-97-lnc"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="VjH-bG-wOv">
+                    <rect key="frame" x="18" y="117" width="414" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Connect to your 8tracks Account" id="Wnp-0e-fX7">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fJL-nn-GaC">
+                    <rect key="frame" x="20" y="55" width="410" height="22"/>
+                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Password" drawsBackground="YES" usesSingleLineMode="YES" id="Xp7-9r-SdQ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <allowedInputSourceLocales>
+                            <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                        </allowedInputSourceLocales>
+                    </secureTextFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="Fux-nj-yBm" id="vtr-Sj-fyT"/>
+                    </connections>
+                </secureTextField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nlq-Mg-FG2">
+                    <rect key="frame" x="20" y="87" width="410" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Username" drawsBackground="YES" id="Gzr-aG-zgA">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="fJL-nn-GaC" id="BF1-mY-deq"/>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fux-nj-yBm">
+                    <rect key="frame" x="20" y="23" width="410" height="25"/>
+                    <buttonCell key="cell" type="squareTextured" title="Sign in" bezelStyle="texturedSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PgF-Uu-c42">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="changeLoginState:" target="-2" id="GFa-hQ-58V"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fJL-nn-GaC" firstAttribute="trailing" secondItem="VjH-bG-wOv" secondAttribute="trailing" id="907-a7-dYQ"/>
+                <constraint firstItem="Fux-nj-yBm" firstAttribute="top" secondItem="fJL-nn-GaC" secondAttribute="bottom" constant="8" id="AuN-ep-B95"/>
+                <constraint firstItem="NLe-vy-KZ3" firstAttribute="top" secondItem="whr-l5-RYu" secondAttribute="top" constant="20" id="Hl2-tc-RER"/>
+                <constraint firstItem="fJL-nn-GaC" firstAttribute="leading" secondItem="nlq-Mg-FG2" secondAttribute="leading" id="Hmy-n5-be9"/>
+                <constraint firstItem="fJL-nn-GaC" firstAttribute="trailing" secondItem="nlq-Mg-FG2" secondAttribute="trailing" id="JUI-4I-GvI"/>
+                <constraint firstAttribute="trailing" secondItem="VjH-bG-wOv" secondAttribute="trailing" constant="20" id="TfG-wN-flC"/>
+                <constraint firstItem="fJL-nn-GaC" firstAttribute="trailing" secondItem="Fux-nj-yBm" secondAttribute="trailing" id="XGB-RO-bHD"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Fux-nj-yBm" secondAttribute="bottom" constant="25" id="Xsy-9u-HTW"/>
+                <constraint firstItem="VjH-bG-wOv" firstAttribute="top" secondItem="NLe-vy-KZ3" secondAttribute="bottom" constant="8" id="agJ-b9-3vI"/>
+                <constraint firstItem="fJL-nn-GaC" firstAttribute="leading" secondItem="Fux-nj-yBm" secondAttribute="leading" id="anY-g0-QL6"/>
+                <constraint firstItem="nlq-Mg-FG2" firstAttribute="top" secondItem="VjH-bG-wOv" secondAttribute="bottom" constant="8" id="dPG-QW-Zvv"/>
+                <constraint firstItem="VjH-bG-wOv" firstAttribute="leading" secondItem="whr-l5-RYu" secondAttribute="leading" constant="20" id="gsl-14-I8K"/>
+                <constraint firstAttribute="centerX" secondItem="NLe-vy-KZ3" secondAttribute="centerX" id="qsr-iI-J96"/>
+                <constraint firstItem="fJL-nn-GaC" firstAttribute="top" secondItem="nlq-Mg-FG2" secondAttribute="bottom" constant="10" id="vkl-5a-mDK"/>
+                <constraint firstItem="fJL-nn-GaC" firstAttribute="leading" secondItem="VjH-bG-wOv" secondAttribute="leading" id="yak-hg-rTl"/>
+                <constraint firstItem="VjH-bG-wOv" firstAttribute="top" secondItem="NLe-vy-KZ3" secondAttribute="bottom" constant="8" id="zRu-jx-cA2"/>
+            </constraints>
+            <point key="canvasLocation" x="296" y="361"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="8tracks_logo_flatwhite" width="1676" height="501"/>
+    </resources>
+</document>

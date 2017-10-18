@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ErrorController">
+            <connections>
+                <outlet property="closeButton" destination="vHz-ej-lhl" id="Y8h-1E-gfT"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="BorderedBackgroundView">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vHz-ej-lhl">
+                    <rect key="frame" x="440" y="20" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Fs2-47-WNw"/>
+                        <constraint firstAttribute="width" constant="20" id="iIu-03-NcS"/>
+                    </constraints>
+                    <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="NSStopProgressFreestandingTemplate" imagePosition="overlaps" alignment="center" controlSize="small" imageScaling="proportionallyDown" id="8Vs-sT-H6C">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystem"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="close:" target="-2" id="Tol-uJ-bmf"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="10" verticalCompressionResistancePriority="10" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czz-jH-mJ7">
+                    <rect key="frame" x="18" y="22" width="416" height="17"/>
+                    <textFieldCell key="cell" controlSize="mini" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" title="Multiline Label" id="tW4-Ux-Ach">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="self.errorText" id="zSc-4y-yHl"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="czz-jH-mJ7" secondAttribute="bottom" constant="4" id="3bm-uD-BKr"/>
+                <constraint firstAttribute="centerY" secondItem="vHz-ej-lhl" secondAttribute="centerY" id="3hW-o8-uXR"/>
+                <constraint firstItem="czz-jH-mJ7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="4" id="IpY-jD-kej"/>
+                <constraint firstAttribute="centerY" secondItem="czz-jH-mJ7" secondAttribute="centerY" id="SO6-kb-Oic"/>
+                <constraint firstItem="czz-jH-mJ7" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="TCs-ja-1v2"/>
+                <constraint firstItem="vHz-ej-lhl" firstAttribute="leading" secondItem="czz-jH-mJ7" secondAttribute="trailing" constant="8" id="cGV-5a-uht"/>
+                <constraint firstAttribute="trailing" secondItem="vHz-ej-lhl" secondAttribute="trailing" constant="20" id="poX-es-0kD"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                    <color key="value" red="1" green="0.35990382094956486" blue="0.3733046203805418" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="340" y="218"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
+    </resources>
+</document>

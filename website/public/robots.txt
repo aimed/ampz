@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /legal.html
+Disallow: /imprint.html
+Disallow: /privacy.html
+Sitemap: http://ampz.io/sitemap.xml

@@ -1,0 +1,25 @@
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+	<channel>
+		<title>Ampz Changelog</title>
+		<link>http://ampz.io/appcast.xml</link>
+		<description>Most recent changes with links to updates.</description>
+		<language>en</language>
+        <item>
+            <title>Version 1.0.1.1</title>
+            <description>
+                <![CDATA[
+                    <ul>
+											<li>+ Fixed display bug in tag list</li>
+											<li>+ New Icon</li>
+                    </ul>
+                ]]>
+            </description>
+            <pubDate>Thu, 23 Apr 2015 09:47:23 +0100</pubDate>
+            <enclosure url="http://ampz.io/download/Ampz.zip"
+            sparkle:version="1.0.1.1"
+            sparkle:dsaSignature="MCwCFAePRVTRze7HgYCIefhMhPu/WHHRAhRbg0I17E78/RFPmQi6uFyWKbXq0A=="
+            length="1499703"
+            type="application/octet-stream" />
+        </item>
+	</channel>
+</rss>

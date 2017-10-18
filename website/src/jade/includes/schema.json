@@ -1,0 +1,12 @@
+{
+	"@context":"http://schema.org",
+	"@type":"SoftwareApplication",
+	"name":"Ampz",
+	"applicationCategory":"Music,Multimedia,Radio",
+	"applicationSubCategory":"Online Radio, 8tracks, Streaming, Music, Player",
+	"downloadUrl":"http://ampz.io/download/Ampz.zip",
+	"featureList":"Play Mixes, Liste Mixes, Sign into 8tracks",
+	"fileFormat":"application/zip",
+	"fileSize":"1.4MB",
+	"operatingSystem":"OSX 10.10"
+}

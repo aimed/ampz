@@ -1,0 +1,25 @@
+block variables
+!!!
+html
+	head
+		block head
+			meta(charset='utf8')
+			meta(name="viewport",content="width=device-width, initial-scale=1")
+			title= "Ampz" + (title ? " - " + title : "")
+			meta(name="description",content=description||"Ampz (Beta) is an unofficial 8tracks client for mac.")
+			meta(name="keyword",content="8tracks,online radio,music stream,radio,music")
+			meta(name="google-site-verification",content="Ca89UCqibOCxwCwFw4DwAktQYynwByTjwK5atHjDlxo")
+			link(rel='stylesheet', href='css/ampz.css')
+			meta(property="fb:admins",content="1491760619")
+			script(src='js/ampz.js',async)
+	block body
+		body
+			#header
+				block hero
+				include ../includes/header
+			#content: block content
+			#footer: include ../includes/footer
+			script(type="application/ld+json")
+				include ../includes/schema.json
+		block tracking
+			include ../includes/tracking
