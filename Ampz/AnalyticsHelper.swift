@@ -13,7 +13,7 @@ let kUserDefaultsAnalyticsEnabled = "ANALYTICS_ENABLED"
 @objc public class AnalyticsHelper : NSObject {
     
     override public class func initialize () {
-        KKGoogleAnalytics.sharedInstance().trackingID = "UA-44446008-2"
+        KKGoogleAnalytics.sharedInstance().trackingID = ""
         KKGoogleAnalytics.sharedInstance().startDispatching()
     }
     
